@@ -1,0 +1,25 @@
+.border-success.shadow-sm {
+  border-radius: 25px;
+  border: inset;
+}
+
+.border-info.shadow-sm {
+  border-radius: 25px;
+  border: inset;
+}
+
+.border-secondary.shadow-sm {
+  border-radius: 25px;
+  border: inset;
+}
+
+.border-danger.shadow-sm {
+  border-radius: 25px;
+  border: inset;
+}
+
+.border-primary.shadow-sm {
+  border-radius: 25px;
+  border: inset;
+}
+
