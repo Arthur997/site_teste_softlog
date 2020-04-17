@@ -22,6 +22,10 @@ def form_filial():
 def form_empresa():
     return render_template('form-empresa.html')
 
+@app.route("/form-veiculo")
+def form_veiculo():
+    return render_template('form-veiculo.html')
+
 if __name__ == "__main__":
     app.run()
 

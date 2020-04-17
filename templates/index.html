@@ -17,42 +17,43 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='Navigation-Clean.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-
 <body style="background-color: rgb(238,244,247);">
     <div>
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean">
-            <div class="container"><a class="navbar-brand" href="#">Softlog</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse"
-                    id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/">HOME</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: rgb(73,98,116);">
+            <div class="container"><a class="navbar-brand" href="#" style="color: rgb(255,255,255);font-size: 25px;">Softlog</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto"></ul>
             </div>
-        </nav>
     </div>
-    <div class="features-boxed" style="background-color: rgb(238,244,247);">
+    </nav>
+    </div>
+    <div class="features-boxed" style="background-color: rgb(236,236,255);">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center">Site teste</h2>
-                <p class="text-center">Site teste criado para acompanhamento em tempo real do desenvolvimento da interface grafica da api Softlog</p>
+                <h2 class="text-center" style="font-size: 35px;">Site teste</h2>
+                <p class="text-center" style="font-size: 19px;">Site teste criado para acompanhamento em tempo real do desenvolvimento da interface grafica da api Softlog</p>
             </div>
             <div class="row justify-content-center features">
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box">
-                        <h3 class="name">Painel acompanhamento</h3><a href="/painel" class="learn-more">Learn more »</a></div>
+                    <div class="border rounded shadow box">
+                        <h3 class="name">Painel acompanhamento</h3><a href="/painel" class="learn-more">Veja mais »</a></div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box">
-                        <h3 class="name">Form Cliente</h3><a href="/form-cliente" class="learn-more">Learn more »</a></div>
+                    <div class="border rounded shadow box">
+                        <h3 class="name">Form Cliente</h3><a href="/form-cliente" class="learn-more">Veja mais »<br></a></div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box">
-                        <h3 class="name">Form Filial</h3><a href="/form-filial" class="learn-more">Learn more »</a></div>
+                    <div class="border rounded shadow box">
+                        <h3 class="name">Form Filial</h3><a href="/form-filial" class="learn-more">Veja mais »<br></a></div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box">
-                        <h3 class="name">Form Empresa</h3><a href="/form-empresa" class="learn-more">Learn more »</a></div>
+                    <div class="border rounded shadow box">
+                        <h3 class="name">Form Empresa</h3><a href="/form-empresa" class="learn-more">Veja mais »<br></a></div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="border rounded shadow box">
+                        <h3 class="name">Form Veículo</h3><a href="/form-veiculo" class="learn-more">Veja mais »<br></a></div>
                 </div>
             </div>
         </div>
