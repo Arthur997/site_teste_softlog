@@ -1,0 +1,109 @@
+{% extends "index.html" %}
+{% block title %}Cadastro Conta Corrente{% endblock title %}
+{% block content %}
+
+    <div class="container border rounded shadow-sm" style="margin-top: 10px;margin-bottom: 10px;padding-bottom: 15px;">
+        <h4 class="text-center" style="margin-top: 5px;margin-bottom: 0px;">Dados do Banco e Agência</h4>
+        <hr style="margin-top: 5px;">
+        <form>
+            <div class="form-row">
+                <div class="col-12 col-lg-1 d-xl-flex align-items-xl-center" style="font-size: 14px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Banco</strong></label></div>
+                <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                <div class="col-1 d-lg-flex align-items-lg-center" style="padding-left: 0px;padding-right: 0px;"><button class="btn btn-success" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;padding: 0px;">↓<br></button></div>
+                <div
+                    class="col-12 col-lg-9 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+    </div>
+    <div class="form-row" style="margin-top: 5px;">
+        <div class="col-12 col-lg-1 d-xl-flex align-items-xl-center" style="font-size: 14px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Agência</strong></label></div>
+        <div class="col-3 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+        <div class="col-9 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+    </div>
+    </form>
+    </div>
+    <div class="container border rounded shadow-sm" style="margin-top: 11px;margin-bottom: 10px;padding-bottom: 15px;">
+        <h4 class="text-center" style="margin-top: 5px;margin-bottom: 0px;">Endereço da Agência</h4>
+        <hr style="margin-top: 5px;">
+        <form>
+            <div class="form-row">
+                <div class="col-12 col-lg-1 d-xl-flex align-items-xl-center" style="font-size: 14px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Cidade</strong></label></div>
+                <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                <div class="col-1 d-lg-flex align-items-lg-center" style="padding-left: 0px;padding-right: 0px;"><button class="btn btn-success" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;padding: 0px;">↓<br></button></div>
+                <div
+                    class="col-10 col-lg-8 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+            <div class="col-2 col-lg-1 justify-content-xl-center align-items-xl-center">
+                <div class="dropleft"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;padding-top: 5px;padding-bottom: 5px;"></button>
+                    <div class="dropdown-menu"
+                        role="menu"><a class="dropdown-item" role="presentation" href="#">AC - Acre</a><a class="dropdown-item" role="presentation" href="#">AL - Alagoas</a><a class="dropdown-item" role="presentation" href="#">AM - Amazonas</a><a class="dropdown-item"
+                            role="presentation" href="#">AP - Amapá</a><a class="dropdown-item" role="presentation" href="#">BA - Bahia</a><a class="dropdown-item" role="presentation" href="#">CE - Ceará</a><a class="dropdown-item" role="presentation" href="#">DF - Destrito Federal</a>
+                        <a
+                            class="dropdown-item" role="presentation" href="#">ES - Espírito Santo</a><a class="dropdown-item" role="presentation" href="#">MA - Maranhão</a><a class="dropdown-item" role="presentation" href="#">MG - Minas Gerais</a><a class="dropdown-item" role="presentation" href="#">MT - Mato Grosso do Sul</a>
+                            <a
+                                class="dropdown-item" role="presentation" href="#">PA - Pará</a><a class="dropdown-item" role="presentation" href="#">PB - Paraíba</a><a class="dropdown-item" role="presentation" href="#">PE - Pernambuco</a><a class="dropdown-item" role="presentation" href="#">PI - Piaui</a>
+                                <a
+                                    class="dropdown-item" role="presentation" href="#">PR- Paraná</a><a class="dropdown-item" role="presentation" href="#">RJ - Rio de Janeiro</a><a class="dropdown-item" role="presentation" href="#">RO - Rondonia</a><a class="dropdown-item" role="presentation" href="#">RN - Rio Grande do Norte</a>
+                                    <a
+                                        class="dropdown-item" role="presentation" href="#">RR - Roraima</a><a class="dropdown-item" role="presentation" href="#">RS - Rio Grande do Sul</a><a class="dropdown-item" role="presentation" href="#">SC - Santa Catarina</a><a class="dropdown-item" role="presentation"
+                                            href="#">SE - Sergipe</a><a class="dropdown-item" role="presentation" href="#">SP - São Paulo</a><a class="dropdown-item" role="presentation" href="#">TO - Tocantins</a><a class="dropdown-item" role="presentation"
+                                            href="#">EX - Exterior</a></div>
+                </div>
+            </div>
+    </div>
+    <div class="form-row" style="margin-top: 5px;">
+        <div class="col-12 col-lg-1 d-xl-flex align-items-xl-center" style="font-size: 14px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Endereço</strong></label></div>
+        <div class="col-12 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+        <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+    </div>
+    <div class="form-row" style="margin-top: 5px;">
+        <div class="col-12 col-lg-1 d-xl-flex align-items-xl-center" style="font-size: 14px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Bairro</strong></label></div>
+        <div class="col-12 col-lg-11 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+    </div>
+    </form>
+    </div>
+    <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;">
+        <h4 class="text-center" style="margin-top: 5px;margin-bottom: 0px;">Dados da Conta Corrente</h4>
+        <hr style="margin-top: 5px;">
+        <form class="form-inline text-capitalize d-md-flex">
+            <div class="form-row d-xl-flex flex-fill">
+                <div class="col-4 col-lg-2 d-flex d-xl-flex justify-content-end justify-content-xl-end align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Data abertura</strong></label></div>
+                <div class="col-8 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-bottom: 15px;padding-left: 5px;padding-right: 0px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                <div class="col-4 col-lg-2 d-flex d-lg-flex justify-content-end justify-content-xl-end align-items-xl-center" style="padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Senha</strong></label></div>
+                <div class="col-8 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                <div class="col-4 col-lg-2 d-flex d-sm-flex d-md-flex d-lg-flex justify-content-end justify-content-sm-end justify-content-md-end justify-content-xl-end align-items-xl-center"
+                    style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Saldo Inicial</strong></label></div>
+                <div class="col-8 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+            </div>
+            <div class="form-row d-xl-flex flex-fill" style="padding-top: 15px;">
+                <div class="col-4 col-lg-2 d-flex d-xl-flex justify-content-end justify-content-xl-end align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Conta corrente</strong></label></div>
+                <div class="col-8 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                <div class="col-4 col-lg-2 d-flex d-lg-flex justify-content-end justify-content-xl-end align-items-xl-center" style="padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Saldo Garantido</strong></label></div>
+                <div class="col-8 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                <div class="col-4 col-lg-2 d-flex d-sm-flex d-md-flex d-lg-flex justify-content-end justify-content-sm-end justify-content-md-end justify-content-xl-end align-items-xl-center"
+                    style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Saldo Atual</strong></label></div>
+                <div class="col-8 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+            </div>
+        </form>
+    </div>
+    <div class="container border rounded shadow-sm" style="margin-top: 11px;margin-bottom: 10px;padding-bottom: 15px;">
+        <h4 class="text-center" style="margin-top: 5px;margin-bottom: 0px;">Titular da Conta Corrente</h4>
+        <hr style="margin-top: 5px;">
+        <form>
+            <div class="form-row" style="margin-top: 5px;">
+                <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>CNPJ/CPF Titular</strong></label></div>
+                <div class="col-12 col-lg-3 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                <div class="col-12 col-lg-7 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+            </div>
+            <div class="form-row" style="padding-top: 5px;">
+                <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Filial</strong></label></div>
+                <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                <div class="col-1 d-lg-flex align-items-lg-center" style="padding-left: 0px;padding-right: 0px;"><button class="btn btn-success" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;padding: 0px;">↓<br></button></div>
+                <div
+                    class="col-12 col-lg-8 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+    </div>
+    </form>
+    </div>
+    <div class="row justify-content-center" style="margin-bottom: 20px;">
+        <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-center" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/save.png')}}" style="width: 20%;">&nbsp; Gravar&nbsp;</button></div>
+        <div
+            class="col-4 col-md-3 col-lg-2"><button class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-center" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/undo.png')}}" style="width: 20%;">&nbsp; Desfazer</button></div>
+    </div>
+{% endblock %}

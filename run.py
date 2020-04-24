@@ -26,6 +26,18 @@ def form_empresa():
 def form_veiculo():
     return render_template('form-veiculo.html')
 
+@app.route("/form-banco")
+def form_banco():
+    return render_template('form-banco.html')
+
+@app.route("/form-agencia")
+def form_agencia():
+    return render_template('form-agencia.html')
+
+@app.route("/form-conta-corrente")
+def form_conta_corrente():
+    return render_template('form-conta-corrente.html')
+
 if __name__ == "__main__":
     app.run()
 
