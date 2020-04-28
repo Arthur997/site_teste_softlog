@@ -38,6 +38,12 @@ def form_agencia():
 def form_conta_corrente():
     return render_template('form-conta-corrente.html')
 
+@app.route("/form-conta-caixa")
+def form_conta_caixa():
+    return render_template('form-conta-caixa.html')
+
+    
+
 if __name__ == "__main__":
     app.run()
 
