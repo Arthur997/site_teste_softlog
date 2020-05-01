@@ -1,0 +1,49 @@
+{% extends "index.html" %}
+{% block title %}Cadastro Aeroporto{% endblock title %}
+{% block content %}
+
+<div class="container border rounded shadow-sm" style="margin-top: 10px;margin-bottom: 10px;padding-bottom: 15px;">
+    <h4 class="text-center" style="margin-top: 5px;margin-bottom: 0px;">Dados do Aeroporto</h4>
+    <hr style="margin-top: 5px;">
+    <form>
+        <div class="form-row">
+            <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>nome do aeroporto</strong></label></div>
+            <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+        </div>
+        <div class="form-row" style="margin-top: 5px;">
+            <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Cidade/ UF</strong></label></div>
+            <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+            <div class="col-1 d-lg-flex align-items-lg-center" style="padding-left: 0px;padding-right: 0px;"><button class="btn btn-success" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;padding: 0px;"><i class="la la-download"></i><br></button></div>
+            <div class="col-10 col-lg-7 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+            <div class="col">
+                <div class="dropleft">
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;padding-top: 5px;padding-bottom: 5px;"></button>
+                    <div class="dropdown-menu"
+                         role="menu">
+                        <a class="dropdown-item" role="presentation" href="#">AC - Acre</a><a class="dropdown-item" role="presentation" href="#">AL - Alagoas</a><a class="dropdown-item" role="presentation" href="#">AM - Amazonas</a><a class="dropdown-item"
+                                                                                                                                                                                                                                           role="presentation" href="#">AP - Amapá</a><a class="dropdown-item" role="presentation" href="#">BA - Bahia</a><a class="dropdown-item" role="presentation" href="#">CE - Ceará</a><a class="dropdown-item" role="presentation" href="#">DF - Destrito Federal</a>
+                        <a class="dropdown-item" role="presentation" href="#">ES - Espírito Santo</a><a class="dropdown-item" role="presentation" href="#">MA - Maranhão</a><a class="dropdown-item" role="presentation" href="#">MG - Minas Gerais</a><a class="dropdown-item" role="presentation" href="#">MT - Mato Grosso do Sul</a>
+                        <a class="dropdown-item" role="presentation" href="#">PA - Pará</a><a class="dropdown-item" role="presentation" href="#">PB - Paraíba</a><a class="dropdown-item" role="presentation" href="#">PE - Pernambuco</a><a class="dropdown-item" role="presentation" href="#">PI - Piaui</a>
+                        <a class="dropdown-item" role="presentation" href="#">PR- Paraná</a><a class="dropdown-item" role="presentation" href="#">RJ - Rio de Janeiro</a><a class="dropdown-item" role="presentation" href="#">RO - Rondonia</a><a class="dropdown-item" role="presentation" href="#">RN - Rio Grande do Norte</a>
+                        <a class="dropdown-item" role="presentation" href="#">RR - Roraima</a><a class="dropdown-item" role="presentation" href="#">RS - Rio Grande do Sul</a><a class="dropdown-item" role="presentation" href="#">SC - Santa Catarina</a><a class="dropdown-item" role="presentation"
+                                                                                                                                                                                                                                                              href="#">SE - Sergipe</a><a class="dropdown-item" role="presentation" href="#">SP - São Paulo</a><a class="dropdown-item" role="presentation" href="#">TO - Tocantins</a><a class="dropdown-item" role="presentation"
+                                                                                                                                                                                                                                                                                                                                                                                                                                          href="#">EX - Exterior</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row" style="margin-top: 5px;">
+            <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Código IATA</strong></label></div>
+            <div class="col-12 col-lg-4 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+            <div class="col-12 col-lg-2 d-xl-flex justify-content-xl-end align-items-xl-center" style="font-size: 14px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Código oACI</strong></label></div>
+            <div class="col-12 col-lg-4 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+        </div>
+    </form>
+</div>
+
+<div class="row justify-content-center" style="margin-bottom: 20px;">
+    <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-success d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/save.png')}}" style="width: 20%;">&nbsp; Gravar&nbsp;</button></div>
+    <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-success d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/save.png')}}" style="width: 20%;">&nbsp; Desfazer</button></div>
+</div>
+
+    {% endblock %}

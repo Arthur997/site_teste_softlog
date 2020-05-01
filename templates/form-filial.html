@@ -2,144 +2,140 @@
 {% block title %}Cadastro Filial{% endblock title %}
 {% block content %}
 
-    <div class="container" style="padding-top: 15px;padding-right: 0px;padding-left: 0px;">
-        <div class="row">
-            <div class="col-12 col-lg-10">
-                <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;">
-                    <h4 class="text-center">Tipo de Unidade&nbsp;</h4>
-                    <hr style="margin-top: 5px;">
-                    <form class="text-capitalize d-md-flex">
-                        <div class="form-check d-xl-flex justify-content-xl-start" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tipo" value="1" id="tipo-1"><label class="form-check-label" for="tipo-1" style="font-weight: bold;">1 - Matriz</label></div>
-                        <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tipo" value="2" id="tipo-2"><label class="form-check-label" for="tipo-2" style="font-weight: bold;">2 - Filial</label></div>
-                        <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tipo" value="3" id="tipo-3"><label class="form-check-label" for="tipo-3" style="font-weight: bold;">3 - Ponto de apoio</label></div>
-                        <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tipo" value="4" id="tipo-4"><label class="form-check-label" for="tipo-4" style="filter: blur(0px);font-style: normal;font-weight: bold;">4 - Parceiro</label></div>
-                    </form>
-                </div>
+<div class="container" style="padding-top: 15px;padding-right: 0px;padding-left: 0px;">
+    <div class="row">
+        <div class="col-12 col-lg-10">
+            <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;">
+                <h4 class="text-center">Tipo de Unidade&nbsp;</h4>
+                <hr style="margin-top: 5px;">
+                <form class="text-capitalize d-md-flex">
+                    <div class="form-check d-xl-flex justify-content-xl-start" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tipo" value="1" id="tipo-1"><label class="form-check-label" for="tipo-1" style="font-weight: bold;">1 - Matriz</label></div>
+                    <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tipo" value="2" id="tipo-2"><label class="form-check-label" for="tipo-2" style="font-weight: bold;">2 - Filial</label></div>
+                    <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tipo" value="3" id="tipo-3"><label class="form-check-label" for="tipo-3" style="font-weight: bold;">3 - Ponto de apoio</label></div>
+                    <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tipo" value="4" id="tipo-4"><label class="form-check-label" for="tipo-4" style="filter: blur(0px);font-style: normal;font-weight: bold;">4 - Parceiro</label></div>
+                </form>
             </div>
-            <div class="col">
-                <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;">
-                    <h4 class="text-center">Situação</h4>
-                    <hr style="margin-top: 5px;">
-                    <form class="text-capitalize d-md-flex">
-                        <div class="form-check"><input class="form-check-input" type="checkbox" name="situacao" id="formCheck"><label class="form-check-label" for="formCheck" style="font-weight: bold;font-size: 15px;">filial ativa</label></div>
-                    </form>
-                </div>
+        </div>
+        <div class="col">
+            <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;">
+                <h4 class="text-center">Situação</h4>
+                <hr style="margin-top: 5px;">
+                <form class="text-capitalize d-md-flex">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="situacao" id="formCheck"><label class="form-check-label" for="formCheck" style="font-weight: bold;font-size: 15px;">filial ativa</label></div>
+                </form>
             </div>
         </div>
     </div>
-    <div class="container border rounded shadow-sm" style="margin-top: 20px;">
-        <h4 class="text-center" style="margin-top: 5px;margin-bottom: 0px;">Dados da Filial</h4>
-        <hr style="margin-top: 5px;">
-        <form>
-            <div class="form-row" style="margin-bottom: 10px;">
-                <div class="col-12 col-lg-2" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Cód. Filial</strong><br></label></div>
-                <div class="col-12 col-lg-2" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
-                <div class="col-12 col-lg-2 col-xl-2 offset-xl-0" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Cód. Empresa</strong><br></label></div>
-                <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
-                <div class="col-1" style="margin-top: 10px;"><button class="btn btn-primary" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;height: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;">↓<br></button></div>
-                <div
-                    class="col-12 col-lg-4" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
-    </div>
-    <div class="form-row flex-column flex-lg-row" style="margin-bottom: 10px;margin-top: 10px;">
-        <div class="col-auto col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Sigla</strong><br></label></div>
-        <div class="clearfix"></div>
-        <div class="col-auto col-sm-auto col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
-        <div class="clearfix"></div>
-        <div class="col-auto col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Nome Descritivo</strong><br></label></div>
-        <div class="clearfix"></div>
-        <div class="col-auto col-sm-auto col-lg-6" style="font-size: 14px;"><input class="form-control" type="text" style="padding-bottom: 15px;"></div>
-    </div>
-    <div class="form-row" style="margin-top: 10px;">
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>CNPJ</strong><br></label></div>
-        <div class="clearfix"></div>
-        <div class="clearfix"></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Endereço</strong></label></div>
-        <div class="clearfix"></div>
-        <div class="col-12 col-lg-6" style="font-size: 14px;"><input class="form-control" type="text"></div>
-    </div>
-    <div class="form-row" style="margin-top: 10px;">
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Cep</strong><br></label></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
-        <div class="clearfix"></div>
-        <div class="clearfix"></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Bairro</strong><br></label></div>
-        <div class="clearfix"></div>
-        <div class="col-lg-6" style="font-size: 14px;"><input class="form-control" type="text"></div>
-    </div>
-    <div class="form-row" style="margin-top: 10px;">
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Número</strong><br></label></div>
-        <div class="clearfix"></div>
-        <div class="clearfix"></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Cidade</strong><br></label></div>
-        <div class="clearfix"></div>
-        <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;"><input class="form-control" type="text"></div>
-        <div class="col-1"><button class="btn btn-primary" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;height: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;">↓<br></button></div>
-        <div
-            class="col-9 col-lg-3" style="font-size: 14px;"><input class="form-control" type="text"></div>
-    <div class="col-3 col-lg-1" style="font-size: 14px;">
-        <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;"></button>
-            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+</div>
+<div class="container border rounded shadow-sm" style="margin-top: 20px;">
+    <h4 class="text-center" style="margin-top: 5px;margin-bottom: 0px;">Dados da Filial</h4>
+    <hr style="margin-top: 5px;">
+    <form>
+        <div class="form-row" style="margin-bottom: 10px;">
+            <div class="col-12 col-lg-2" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Cód. Filial</strong><br></label></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-12 col-lg-2 col-xl-2 offset-xl-0" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Cód. Empresa</strong><br></label></div>
+            <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-1" style="margin-top: 10px;"><button class="btn btn-primary" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;height: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;">↓<br></button></div>
+            <div class="col-12 col-lg-4" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
         </div>
-    </div>
-    </div>
-    <div class="form-row" style="margin-top: 10px;">
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Fuso Horário</strong><br></label></div>
-        <div class="clearfix"></div>
-        <div class="clearfix"></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="number"></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Suframa</strong><br></label></div>
-        <div class="clearfix"></div>
-        <div class="col-12 col-lg-6" style="font-size: 14px;"><input class="form-control" type="text" style="padding-bottom: 15px;"></div>
-    </div>
-    <div class="form-row" style="margin-top: 10px;">
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>I.E</strong><br></label></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Região</strong><br></label></div>
-        <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;"><input class="form-control" type="text"></div>
-        <div class="col-1"><button class="btn btn-primary" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;height: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;">↓<br></button></div>
-        <div
-            class="col-12 col-lg-4" style="font-size: 14px;"><input class="form-control" type="text"></div>
-    </div>
-    <div class="form-row" style="margin-top: 10px;margin-bottom: 10px;">
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>I.M</strong><br></label></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
-        <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Contador</strong><br></label></div>
-        <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;"><input class="form-control" type="text"></div>
-        <div class="col-1"><button class="btn btn-primary" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;height: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;">↓<br></button></div>
-        <div
-            class="col-12 col-lg-4" style="font-size: 14px;"><input class="form-control" type="text"></div>
-    </div>
+        <div class="form-row flex-column flex-lg-row" style="margin-bottom: 10px;margin-top: 10px;">
+            <div class="col-auto col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Sigla</strong><br></label></div>
+            <div class="clearfix"></div>
+            <div class="col-auto col-sm-auto col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="clearfix"></div>
+            <div class="col-auto col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Nome Descritivo</strong><br></label></div>
+            <div class="clearfix"></div>
+            <div class="col-auto col-sm-auto col-lg-6" style="font-size: 14px;"><input class="form-control" type="text" style="padding-bottom: 15px;"></div>
+        </div>
+        <div class="form-row" style="margin-top: 10px;">
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>CNPJ</strong><br></label></div>
+            <div class="clearfix"></div>
+            <div class="clearfix"></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Endereço</strong></label></div>
+            <div class="clearfix"></div>
+            <div class="col-12 col-lg-6" style="font-size: 14px;"><input class="form-control" type="text"></div>
+        </div>
+        <div class="form-row" style="margin-top: 10px;">
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Cep</strong><br></label></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="clearfix"></div>
+            <div class="clearfix"></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Bairro</strong><br></label></div>
+            <div class="clearfix"></div>
+            <div class="col-lg-6" style="font-size: 14px;"><input class="form-control" type="text"></div>
+        </div>
+        <div class="form-row" style="margin-top: 10px;">
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Número</strong><br></label></div>
+            <div class="clearfix"></div>
+            <div class="clearfix"></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Cidade</strong><br></label></div>
+            <div class="clearfix"></div>
+            <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="col-1"><button class="btn btn-primary" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;height: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;">↓<br></button></div>
+            <div class="col-9 col-lg-3" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="col-3 col-lg-1" style="font-size: 14px;">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;"></button>
+                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row" style="margin-top: 10px;">
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Fuso Horário</strong><br></label></div>
+            <div class="clearfix"></div>
+            <div class="clearfix"></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="number"></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Suframa</strong><br></label></div>
+            <div class="clearfix"></div>
+            <div class="col-12 col-lg-6" style="font-size: 14px;"><input class="form-control" type="text" style="padding-bottom: 15px;"></div>
+        </div>
+        <div class="form-row" style="margin-top: 10px;">
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>I.E</strong><br></label></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Região</strong><br></label></div>
+            <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="col-1"><button class="btn btn-primary" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;height: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;">↓<br></button></div>
+            <div class="col-12 col-lg-4" style="font-size: 14px;"><input class="form-control" type="text"></div>
+        </div>
+        <div class="form-row" style="margin-top: 10px;margin-bottom: 10px;">
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>I.M</strong><br></label></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Contador</strong><br></label></div>
+            <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="col-1"><button class="btn btn-primary" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;height: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;">↓<br></button></div>
+            <div class="col-12 col-lg-4" style="font-size: 14px;"><input class="form-control" type="text"></div>
+        </div>
     </form>
-    </div>
-    <div class="container border rounded shadow-sm" style="margin-top: 30px;">
-        <div style="margin-top: 10px;">
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-1">Fiscais</a></li>
-                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-2">Contatos</a></li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" role="tabpanel" id="tab-1" style="padding-left: 0px;padding-bottom: 15px;">
-                    <div class="row">
-                        <div class="col-12 col-lg-6" style="padding-top: 15px;">
-                            <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;">
-                                <div class="row">
-                                    <div class="col-1"><input type="checkbox"></div>
-                                    <div class="col">
-                                        <p class="text-center align-items-lg-start" style="margin-bottom: 0px;"><strong>Unidade Fiscal</strong></p>
-                                    </div>
+</div>
+<div class="container border rounded shadow-sm" style="margin-top: 30px;">
+    <div style="margin-top: 10px;">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-1">Fiscais</a></li>
+            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-2">Contatos</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" role="tabpanel" id="tab-1" style="padding-left: 0px;padding-bottom: 15px;">
+                <div class="row">
+                    <div class="col-12 col-lg-6" style="padding-top: 15px;">
+                        <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;">
+                            <div class="row">
+                                <div class="col-1"><input type="checkbox"></div>
+                                <div class="col">
+                                    <p class="text-center align-items-lg-start" style="margin-bottom: 0px;"><strong>Unidade Fiscal</strong></p>
                                 </div>
-                                <hr style="margin-top: 5px;">
-                                <form class="text-capitalize d-md-flex">
-                                    <div class="form-row">
-                                        <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>CNPJ Emissor</strong><br></label></div>
-                                        <div class="col-11 col-lg-3 d-flex d-xl-flex align-items-center align-items-xl-center"
-                                            style="font-size: 14px;padding-right: 5px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
-                                        <div class="col-1 d-lg-flex align-items-lg-center" style="padding-left: 0px;padding-right: 0px;"><button class="btn btn-primary" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;padding: 0px;">↓<br></button></div>
-                                        <div
-                                            class="col-12 col-lg-6 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
                             </div>
+                            <hr style="margin-top: 5px;">
+                            <form class="text-capitalize d-md-flex">
+                                <div class="form-row">
+                                    <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>CNPJ Emissor</strong><br></label></div>
+                                    <div class="col-11 col-lg-3 d-flex d-xl-flex align-items-center align-items-xl-center"
+                                         style="font-size: 14px;padding-right: 5px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                                    <div class="col-1 d-lg-flex align-items-lg-center" style="padding-left: 0px;padding-right: 0px;"><button class="btn btn-primary" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;padding: 0px;">↓<br></button></div>
+                                    <div class="col-12 col-lg-6 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -157,259 +153,261 @@
                                     <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>tipo Produto</strong></label></div>
                                     <div class="col-11 col-lg-3 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
                                     <div class="col-1 d-lg-flex align-items-lg-center" style="padding-left: 0px;padding-right: 0px;"><button class="btn btn-primary" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;padding: 0px;">↓<br></button></div>
-                                    <div
-                                        class="col-12 col-lg-6 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                                    <div class="col-12 col-lg-6 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                                </div>
+                            </form>
                         </div>
-                        </form>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12" style="padding-top: 15px;">
-                    <div class="container border rounded shadow-sm d-lg-flex align-items-xl-center" style="padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;">
-                        <div class="col-lg-2">
-                            <p class="text-center" style="font-size: 15px;margin-bottom: 0px;"><strong>CRT</strong><br></p>
+                <div class="row">
+                    <div class="col-12" style="padding-top: 15px;">
+                        <div class="container border rounded shadow-sm d-lg-flex align-items-xl-center" style="padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;">
+                            <div class="col-lg-2">
+                                <p class="text-center" style="font-size: 15px;margin-bottom: 0px;"><strong>CRT</strong><br></p>
+                                <hr style="margin-top: 5px;">
+                                <form class="text-capitalize d-md-flex">
+                                    <div class="col-12" style="font-size: 14px;padding-right: 10px;padding-left: 10px;">
+                                        <div class="dropdown">
+                                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;"></button>
+                                            <div class="dropdown-menu"
+                                                 role="menu">
+                                                <a class="dropdown-item" role="presentation" href="#">1-Simples Nacional</a><a class="dropdown-item" role="presentation" href="#">2-Simples Nacional - excesso de sublimite de receita bruta<br></a><a class="dropdown-item"
+                                                                                                                                                                                                                                                       role="presentation" href="#">3-Regime Nacional<br></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-2">
+                                <p class="text-center" style="margin-bottom: 0px;"><strong>CNAE</strong><br></p>
+                                <hr style="margin-top: 5px;">
+                                <form class="text-capitalize d-md-flex">
+                                    <div class="col-12" style="font-size: 14px;padding-right: 0px;padding-left: 0px;"><input class="form-control" type="text"></div>
+                                </form>
+                            </div>
+                            <div class="col-lg-2">
+                                <p class="text-center" style="margin-bottom: 0px;"><strong>Série CT-e</strong></p>
+                                <hr style="margin-top: 5px;">
+                                <form class="text-capitalize d-md-flex">
+                                    <div class="col-12" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><input class="form-control" type="text"></div>
+                                </form>
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="text-center" style="margin-bottom: 0px;"><strong>Alíquota ISS</strong><br></p>
+                                <hr style="margin-top: 5px;">
+                                <form class="text-capitalize d-md-flex">
+                                    <div class="col-12" style="font-size: 14px;padding-right: 0px;padding-left: 0px;"><input class="form-control" type="text"></div>
+                                </form>
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="text-center" style="font-size: 15px;margin-bottom: 0px;"><strong>ICMS Simples</strong><br></p>
+                                <hr style="margin-top: 5px;">
+                                <form class="text-capitalize d-md-flex">
+                                    <div class="col-12" style="font-size: 14px;padding-right: 10px;padding-left: 10px;"><input class="form-control" type="text"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" style="padding-top: 15px;">
+                        <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;">
+                            <p class="text-center" style="margin-bottom: 0px;"><strong>Aliquota Simples Nacional</strong></p>
                             <hr style="margin-top: 5px;">
-                            <form class="text-capitalize d-md-flex">
-                                <div class="col-12" style="font-size: 14px;padding-right: 10px;padding-left: 10px;">
-                                    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;"></button>
-                                        <div class="dropdown-menu"
-                                            role="menu"><a class="dropdown-item" role="presentation" href="#">1-Simples Nacional</a><a class="dropdown-item" role="presentation" href="#">2-Simples Nacional - excesso de sublimite de receita bruta<br></a><a class="dropdown-item"
-                                                role="presentation" href="#">3-Regime Nacional<br></a></div>
+                            <form class="form-inline text-capitalize d-md-flex">
+                                <div class="form-row d-xl-flex flex-fill">
+                                    <div class="col-2 col-sm-1 col-lg-1 d-flex d-xl-flex justify-content-end justify-content-xl-end align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>ICMS</strong></label></div>
+                                    <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                                    <div class="col-2 col-sm-1 col-lg-1 d-flex d-lg-flex justify-content-end justify-content-xl-end align-items-xl-center"
+                                         style="padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>IPI</strong></label></div>
+                                    <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                                    <div class="col-2 col-sm-1 col-lg-1 d-lg-flex justify-content-lg-end justify-content-xl-end align-items-xl-center"
+                                         style="padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>COFINS</strong></label></div>
+                                    <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                                    <div class="col-2 col-sm-1 col-lg-1 d-flex d-sm-flex d-md-flex d-lg-flex justify-content-end justify-content-sm-end justify-content-md-end justify-content-xl-end align-items-xl-center"
+                                         style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>CPP</strong></label></div>
+                                    <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                                </div>
+                                <div class="form-row d-xl-flex flex-fill">
+                                    <div class="col-2 col-sm-1 col-lg-1 d-flex d-xl-flex justify-content-end justify-content-xl-end align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>IRPJ</strong></label></div>
+                                    <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                                    <div class="col-2 col-sm-1 col-lg-1 d-flex d-lg-flex justify-content-end justify-content-xl-end align-items-xl-center"
+                                         style="padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>CSLL</strong></label></div>
+                                    <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                                    <div class="col-2 col-sm-1 col-lg-1 d-flex d-sm-flex d-lg-flex justify-content-end justify-content-sm-end justify-content-lg-end justify-content-xl-end align-items-xl-center"
+                                         style="padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>PIS</strong></label></div>
+                                    <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                                    <div class="col-2 col-sm-1 col-lg-1 d-flex d-sm-flex d-md-flex d-lg-flex justify-content-end justify-content-sm-end justify-content-md-end justify-content-xl-end align-items-xl-center"
+                                         style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>CP</strong></label></div>
+                                    <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-2" style="padding-top: 15px;">
+                        <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 28px;padding-right: 10px;padding-left: 10px;">
+                            <p class="text-center" style="margin-bottom: 0px;"><strong>Tributação</strong></p>
+                            <hr style="margin-top: 5px;">
+                            <div class="col-12" style="font-size: 14px;padding-left: 0px;padding-right: 0px;">
+                                <form class="form-inline text-capitalize d-md-flex">
+                                    <div class="form-check d-xl-flex justify-content-xl-start" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tributacao" value="1" id="RadioTributacao-1"><label class="form-check-label text-nowrap" for="RadioTributacao-1" style="font-weight: bold;">1- Simples</label></div>
+                                    <div class="form-check d-xl-flex justify-content-xl-start" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tributacao" value="2" id="RadioTributacao-2"><label class="form-check-label text-nowrap" for="RadioTributacao-2" style="font-weight: bold;">2- Presumido</label></div>
+                                    <div class="form-check d-xl-flex justify-content-xl-start" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tributacao" value="3" id="RadioTributacao-3"><label class="form-check-label text-nowrap" for="RadioTributacao-3" style="font-weight: bold;">3- Lucro Real</label></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2" style="padding-top: 15px;">
+                        <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 28px;padding-right: 10px;padding-left: 10px;">
+                            <p class="text-center" style="margin-bottom: 0px;"><strong>Habilitado</strong></p>
+                            <hr style="margin-top: 5px;">
+                            <div class="col-12" style="font-size: 14px;padding-left: 0px;padding-right: 0px;">
+                                <form class="form-inline d-md-flex">
+                                    <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label text-nowrap" for="formCheck-1"><strong>Emite CT-e</strong></label></div>
+                                    <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label text-nowrap" for="formCheck-2"><strong>Emite NF-e</strong></label></div>
+                                    <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label text-nowrap" for="formCheck-3"><strong>Emite NFS-e</strong></label></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8" style="padding-top: 15px;">
+                        <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;">
+                            <p class="text-center" style="margin-bottom: 0px;"><strong>Outros</strong></p>
+                            <hr style="margin-top: 5px;">
+                            <form class="justify-content-xl-center align-items-xl-center">
+                                <div class="form-row">
+                                    <div class="col-lg-6">
+                                        <div class="form-row text-left flex-fill">
+                                            <div class="col-2 col-lg-3 d-xl-flex justify-content-xl-end">
+                                                <p style="font-size: 14px;"><strong>CP</strong></p>
+                                            </div>
+                                            <div class="col-10 col-lg-6">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;"></button>
+                                                    <div class="dropdown-menu"
+                                                         role="menu"><a class="dropdown-item" role="presentation" href="#">SIM</a><a class="dropdown-item" role="presentation" href="#">NÃO</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row flex-fill" style="margin-top: 5px;">
+                                            <div class="col-2 col-lg-3 d-xl-flex justify-content-xl-end">
+                                                <p style="font-size: 14px;"><strong>SPED</strong></p>
+                                            </div>
+                                            <div class="col-10 col-lg-6">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;"></button>
+                                                    <div class="dropdown-menu"
+                                                         role="menu"><a class="dropdown-item" role="presentation" href="#">A</a><a class="dropdown-item" role="presentation" href="#">B</a><a class="dropdown-item" role="presentation" href="#">C</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-row">
+                                            <div class="col-lg-8">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="outros-1"><label class="form-check-label" for="outros-1" style="font-size: 14px;"><strong>Recolhe Difal</strong></label></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-lg-8">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="outros-2"><label class="form-check-label" for="outros-2" style="font-size: 14px;"><strong>CIF Incide Interestadual</strong><br></label></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <div class="col-lg-2">
-                            <p class="text-center" style="margin-bottom: 0px;"><strong>CNAE</strong><br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="tab-2">
+                <div class="row">
+                    <div class="col-12" style="padding-top: 15px;padding-bottom: 15px;">
+                        <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;">
+                            <p class="text-center" style="margin-bottom: 0px;"><strong>Dados de Contato</strong></p>
                             <hr style="margin-top: 5px;">
-                            <form class="text-capitalize d-md-flex">
-                                <div class="col-12" style="font-size: 14px;padding-right: 0px;padding-left: 0px;"><input class="form-control" type="text"></div>
-                            </form>
-                        </div>
-                        <div class="col-lg-2">
-                            <p class="text-center" style="margin-bottom: 0px;"><strong>Série CT-e</strong></p>
-                            <hr style="margin-top: 5px;">
-                            <form class="text-capitalize d-md-flex">
-                                <div class="col-12" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><input class="form-control" type="text"></div>
-                            </form>
-                        </div>
-                        <div class="col-lg-3">
-                            <p class="text-center" style="margin-bottom: 0px;"><strong>Alíquota ISS</strong><br></p>
-                            <hr style="margin-top: 5px;">
-                            <form class="text-capitalize d-md-flex">
-                                <div class="col-12" style="font-size: 14px;padding-right: 0px;padding-left: 0px;"><input class="form-control" type="text"></div>
-                            </form>
-                        </div>
-                        <div class="col-lg-3">
-                            <p class="text-center" style="font-size: 15px;margin-bottom: 0px;"><strong>ICMS Simples</strong><br></p>
-                            <hr style="margin-top: 5px;">
-                            <form class="text-capitalize d-md-flex">
-                                <div class="col-12" style="font-size: 14px;padding-right: 10px;padding-left: 10px;"><input class="form-control" type="text"></div>
+                            <form class="text-capitalize">
+                                <div class="form-row flex-fill" style="margin-bottom: 10px;">
+                                    <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Nome contato</strong></label></div>
+                                    <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                                </div>
+                                <div class="form-row flex-fill" style="margin-bottom: 10px;">
+                                    <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Site</strong></label></div>
+                                    <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="url"></div>
+                                </div>
+                                <div class="form-row flex-fill" style="margin-bottom: 10px;">
+                                    <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>E-mail</strong></label></div>
+                                    <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="email"></div>
+                                </div>
+                                <div class="form-row flex-fill" style="margin-bottom: 10px;">
+                                    <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Facebook</strong></label></div>
+                                    <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                                </div>
+                                <div class="form-row flex-fill" style="margin-bottom: 10px;">
+                                    <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>LinkedIn</strong><br></label></div>
+                                    <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                                </div>
+                                <div class="form-row flex-fill" style="margin-bottom: 10px;">
+                                    <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>url Form Contato</strong></label></div>
+                                    <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                                </div>
+                                <div class="form-row flex-fill" style="margin-bottom: 10px;">
+                                    <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>telefone</strong></label></div>
+                                    <div class="col-1 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                                    <div class="col-11 col-lg-9 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
+                                </div>
+                                <div class="form-row flex-fill" style="margin-bottom: 10px;">
+                                    <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Contatos livres</strong></label></div>
+                                    <div class="col-12 col-lg-9 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><textarea class="form-control form-control-lg"></textarea></div>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12" style="padding-top: 15px;">
-                    <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;">
-                        <p class="text-center" style="margin-bottom: 0px;"><strong>Aliquota Simples Nacional</strong></p>
-                        <hr style="margin-top: 5px;">
-                        <form class="form-inline text-capitalize d-md-flex">
-                            <div class="form-row d-xl-flex flex-fill">
-                                <div class="col-2 col-sm-1 col-lg-1 d-flex d-xl-flex justify-content-end justify-content-xl-end align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>ICMS</strong></label></div>
-                                <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
-                                <div class="col-2 col-sm-1 col-lg-1 d-flex d-lg-flex justify-content-end justify-content-xl-end align-items-xl-center"
-                                    style="padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>IPI</strong></label></div>
-                                <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
-                                <div class="col-2 col-sm-1 col-lg-1 d-lg-flex justify-content-lg-end justify-content-xl-end align-items-xl-center"
-                                    style="padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>COFINS</strong></label></div>
-                                <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
-                                <div class="col-2 col-sm-1 col-lg-1 d-flex d-sm-flex d-md-flex d-lg-flex justify-content-end justify-content-sm-end justify-content-md-end justify-content-xl-end align-items-xl-center"
-                                    style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>CPP</strong></label></div>
-                                <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
-                            </div>
-                            <div class="form-row d-xl-flex flex-fill">
-                                <div class="col-2 col-sm-1 col-lg-1 d-flex d-xl-flex justify-content-end justify-content-xl-end align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>IRPJ</strong></label></div>
-                                <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
-                                <div class="col-2 col-sm-1 col-lg-1 d-flex d-lg-flex justify-content-end justify-content-xl-end align-items-xl-center"
-                                    style="padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>CSLL</strong></label></div>
-                                <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
-                                <div class="col-2 col-sm-1 col-lg-1 d-flex d-sm-flex d-lg-flex justify-content-end justify-content-sm-end justify-content-lg-end justify-content-xl-end align-items-xl-center"
-                                    style="padding-left: 0px;padding-right: 0px;padding-bottom: 15px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>PIS</strong></label></div>
-                                <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 5px;padding-left: 5px;padding-bottom: 15px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
-                                <div class="col-2 col-sm-1 col-lg-1 d-flex d-sm-flex d-md-flex d-lg-flex justify-content-end justify-content-sm-end justify-content-md-end justify-content-xl-end align-items-xl-center"
-                                    style="padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>CP</strong></label></div>
-                                <div class="col-10 col-sm-5 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;width: 100%;"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-2" style="padding-top: 15px;">
-                    <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 28px;padding-right: 10px;padding-left: 10px;">
-                        <p class="text-center" style="margin-bottom: 0px;"><strong>Tributação</strong></p>
-                        <hr style="margin-top: 5px;">
-                        <div class="col-12" style="font-size: 14px;padding-left: 0px;padding-right: 0px;">
-                            <form class="form-inline text-capitalize d-md-flex">
-                                <div class="form-check d-xl-flex justify-content-xl-start" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tributacao" value="1" id="RadioTributacao-1"><label class="form-check-label text-nowrap" for="RadioTributacao-1" style="font-weight: bold;">1- Simples</label></div>
-                                <div
-                                    class="form-check d-xl-flex justify-content-xl-start" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tributacao" value="2" id="RadioTributacao-2"><label class="form-check-label text-nowrap" for="RadioTributacao-2" style="font-weight: bold;">2- Presumido</label></div>
-                        <div
-                            class="form-check d-xl-flex justify-content-xl-start" style="margin-right: 30px;"><input class="form-check-input" type="radio" name="tributacao" value="3" id="RadioTributacao-3"><label class="form-check-label text-nowrap" for="RadioTributacao-3" style="font-weight: bold;">3- Lucro Real</label></div>
-                    </form>
-                </div>
-            </div>
         </div>
-        <div class="col-12 col-lg-2" style="padding-top: 15px;">
-            <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 28px;padding-right: 10px;padding-left: 10px;">
-                <p class="text-center" style="margin-bottom: 0px;"><strong>Habilitado</strong></p>
-                <hr style="margin-top: 5px;">
-                <div class="col-12" style="font-size: 14px;padding-left: 0px;padding-right: 0px;">
-                    <form class="form-inline d-md-flex">
-                        <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label text-nowrap" for="formCheck-1"><strong>Emite CT-e</strong></label></div>
-                        <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label text-nowrap" for="formCheck-2"><strong>Emite NF-e</strong></label></div>
-                        <div class="form-check" style="margin-right: 30px;"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label text-nowrap" for="formCheck-3"><strong>Emite NFS-e</strong></label></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-8" style="padding-top: 15px;">
+    </div>
+</div>
+<div class="container" style="margin-top: 20px;margin-bottom: 30px;">
+    <div class="row flex-fill">
+        <div class="col-12" style="padding-top: 15px;padding-right: 0px;padding-left: 0px;">
             <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;">
-                <p class="text-center" style="margin-bottom: 0px;"><strong>Outros</strong></p>
+                <p class="text-center" style="margin-bottom: 0px;"><strong>Comissão das Unidades</strong></p>
                 <hr style="margin-top: 5px;">
                 <form class="justify-content-xl-center align-items-xl-center">
-                    <div class="form-row">
-                        <div class="col-lg-6">
-                            <div class="form-row text-left flex-fill">
-                                <div class="col-2 col-lg-3 d-xl-flex justify-content-xl-end">
-                                    <p style="font-size: 14px;"><strong>CP</strong></p>
-                                </div>
-                                <div class="col-10 col-lg-6">
-                                    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;"></button>
-                                        <div class="dropdown-menu"
-                                            role="menu"><a class="dropdown-item" role="presentation" href="#">SIM</a><a class="dropdown-item" role="presentation" href="#">NÃO</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row flex-fill" style="margin-top: 5px;">
-                                <div class="col-2 col-lg-3 d-xl-flex justify-content-xl-end">
-                                    <p style="font-size: 14px;"><strong>SPED</strong></p>
-                                </div>
-                                <div class="col-10 col-lg-6">
-                                    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;"></button>
-                                        <div class="dropdown-menu"
-                                            role="menu"><a class="dropdown-item" role="presentation" href="#">A</a><a class="dropdown-item" role="presentation" href="#">B</a><a class="dropdown-item" role="presentation" href="#">C</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-row">
-                                <div class="col-lg-8">
-                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="outros-1"><label class="form-check-label" for="outros-1" style="font-size: 14px;"><strong>Recolhe Difal</strong></label></div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-lg-8">
-                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="outros-2"><label class="form-check-label" for="outros-2" style="font-size: 14px;"><strong>CIF Incide Interestadual</strong><br></label></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Tipo de Comissão</th>
+                                    <th>% Comissão</th>
+                                    <th>Descontar Impostos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell 1</td>
+                                    <td>Cell 2</td>
+                                    <td><input type="checkbox" id="impostoCheck-1"></td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                    <td><input type="checkbox" id="impostoCheck-2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    </div>
-    <div class="tab-pane" role="tabpanel" id="tab-2">
-        <div class="row">
-            <div class="col-12" style="padding-top: 15px;padding-bottom: 15px;">
-                <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;">
-                    <p class="text-center" style="margin-bottom: 0px;"><strong>Dados de Contato</strong></p>
-                    <hr style="margin-top: 5px;">
-                    <form class="text-capitalize">
-                        <div class="form-row flex-fill" style="margin-bottom: 10px;">
-                            <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Nome contato</strong></label></div>
-                            <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
-                        </div>
-                        <div class="form-row flex-fill" style="margin-bottom: 10px;">
-                            <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Site</strong></label></div>
-                            <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="url"></div>
-                        </div>
-                        <div class="form-row flex-fill" style="margin-bottom: 10px;">
-                            <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>E-mail</strong></label></div>
-                            <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="email"></div>
-                        </div>
-                        <div class="form-row flex-fill" style="margin-bottom: 10px;">
-                            <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Facebook</strong></label></div>
-                            <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
-                        </div>
-                        <div class="form-row flex-fill" style="margin-bottom: 10px;">
-                            <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>LinkedIn</strong><br></label></div>
-                            <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
-                        </div>
-                        <div class="form-row flex-fill" style="margin-bottom: 10px;">
-                            <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>url Form Contato</strong></label></div>
-                            <div class="col-12 col-lg-10 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
-                        </div>
-                        <div class="form-row flex-fill" style="margin-bottom: 10px;">
-                            <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>telefone</strong></label></div>
-                            <div class="col-1 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
-                            <div class="col-11 col-lg-9 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><input class="form-control" type="text" style="padding-bottom: 0px;padding-top: 0px;"></div>
-                        </div>
-                        <div class="form-row flex-fill" style="margin-bottom: 10px;">
-                            <div class="col-12 col-lg-2 d-xl-flex align-items-xl-center" style="font-size: 14px;padding-left: 0px;padding-right: 0px;"><label class="col-form-label text-capitalize d-xl-flex" style="font-size: 13px;"><strong>Contatos livres</strong></label></div>
-                            <div class="col-12 col-lg-9 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;padding-right: 0px;padding-left: 5px;"><textarea class="form-control form-control-lg"></textarea></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="container" style="margin-top: 20px;margin-bottom: 30px;">
-        <div class="row flex-fill">
-            <div class="col-12" style="padding-top: 15px;padding-right: 0px;padding-left: 0px;">
-                <div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;">
-                    <p class="text-center" style="margin-bottom: 0px;"><strong>Comissão das Unidades</strong></p>
-                    <hr style="margin-top: 5px;">
-                    <form class="justify-content-xl-center align-items-xl-center">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Tipo de Comissão</th>
-                                        <th>% Comissão</th>
-                                        <th>Descontar Impostos</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Cell 1</td>
-                                        <td>Cell 2</td>
-                                        <td><input type="checkbox" id="impostoCheck-1"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cell 3</td>
-                                        <td>Cell 4</td>
-                                        <td><input type="checkbox" id="impostoCheck-2"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row justify-content-center" style="margin-bottom: 20px;">
-        <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-center" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/save.png')}}" style="width: 20%;">&nbsp; Gravar&nbsp;</button></div>
-        <div
-            class="col-4 col-md-3 col-lg-2"><button class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-center" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/undo.png')}}" style="width: 20%;">&nbsp; Desfazer</button></div>
-    </div>
+</div>
+<div class="row justify-content-center" style="margin-bottom: 20px;">
+    <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-success d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/save.png')}}" style="width: 20%;">&nbsp; Gravar&nbsp;</button></div>
+    <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-success d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/save.png')}}" style="width: 20%;">&nbsp; Desfazer</button></div>
+</div>
+
 {% endblock %}

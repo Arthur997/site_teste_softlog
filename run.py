@@ -42,6 +42,17 @@ def form_conta_corrente():
 def form_conta_caixa():
     return render_template('form-conta-caixa.html')
 
+@app.route("/form-aeroporto")
+def form_aeroporto():
+    return render_template('form-aeroporto.html')
+
+@app.route("/form-centro-custo")
+def form_centro_custo():
+    return render_template('form-centro-custo.html')
+
+@app.route("/form-despesa-viagem")
+def form_despesa_viagem():
+    return render_template('form-despesa-viagem.html')
     
 
 if __name__ == "__main__":
