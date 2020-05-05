@@ -54,6 +54,10 @@ def form_centro_custo():
 def form_despesa_viagem():
     return render_template('form-despesa-viagem.html')
     
+@app.route("/form-cidade")
+def form_cidade():
+    return render_template('form-cidade.html')
+    
 
 if __name__ == "__main__":
     app.run()

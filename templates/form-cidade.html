@@ -1,0 +1,166 @@
+{% extends "index.html" %}
+{% block title %}Cadastro Cidades{% endblock title %}
+{% block content %}
+
+<div class="container border rounded shadow-sm" style="margin-top: 20px;">
+    <h4 class="text-center" style="margin-top: 5px;margin-bottom: 0px;">Dados da Cidade</h4>
+    <hr style="margin-top: 5px;">
+    <form>
+        <div class="form-row" style="margin-bottom: 10px;">
+            <div class="col-12 col-lg-2" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Código/ País</strong><br></label></div>
+            <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-1" style="margin-top: 10px;"><button class="btn btn-success" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 22px;"><i class="la la-download" style="color: #222222;"></i><br></button></div>
+            <div class="col-12 col-lg-7" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+        </div>
+        <div class="form-row flex-column flex-lg-row" style="margin-bottom: 10px;margin-top: 10px;">
+            <div class="col-auto col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Sigla</strong><br></label></div>
+            <div class="clearfix"></div>
+            <div class="col-auto col-sm-auto col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="clearfix"></div>
+            <div class="col-auto col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Nome Descritivo</strong><br></label></div>
+            <div class="clearfix"></div>
+            <div class="col-auto col-sm-auto col-lg-5" style="font-size: 14px;"><input class="form-control" type="text" style="padding-bottom: 15px;"></div>
+            <div class="col">
+                <div class="dropleft">
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;padding-top: 5px;padding-bottom: 5px;"></button>
+                    <div class="dropdown-menu"
+                         role="menu">
+                        <a class="dropdown-item" role="presentation" href="#">AC - Acre</a><a class="dropdown-item" role="presentation" href="#">AL - Alagoas</a><a class="dropdown-item" role="presentation" href="#">AM - Amazonas</a><a class="dropdown-item" role="presentation"
+                                                                                                                                                                                                                                           href="#">AP - Amapá</a><a class="dropdown-item" role="presentation" href="#">BA - Bahia</a><a class="dropdown-item" role="presentation" href="#">CE - Ceará</a><a class="dropdown-item" role="presentation" href="#">DF - Destrito Federal</a>
+                        <a class="dropdown-item" role="presentation" href="#">ES - Espírito Santo</a><a class="dropdown-item" role="presentation" href="#">MA - Maranhão</a><a class="dropdown-item" role="presentation" href="#">MG - Minas Gerais</a><a class="dropdown-item" role="presentation" href="#">MT - Mato Grosso do Sul</a>
+                        <a class="dropdown-item" role="presentation" href="#">PA - Pará</a><a class="dropdown-item" role="presentation" href="#">PB - Paraíba</a><a class="dropdown-item" role="presentation" href="#">PE - Pernambuco</a><a class="dropdown-item" role="presentation" href="#">PI - Piaui</a>
+                        <a class="dropdown-item" role="presentation" href="#">PR- Paraná</a><a class="dropdown-item" role="presentation" href="#">RJ - Rio de Janeiro</a><a class="dropdown-item" role="presentation" href="#">RO - Rondonia</a><a class="dropdown-item" role="presentation" href="#">RN - Rio Grande do Norte</a>
+                        <a class="dropdown-item" role="presentation" href="#">RR - Roraima</a><a class="dropdown-item" role="presentation" href="#">RS - Rio Grande do Sul</a><a class="dropdown-item" role="presentation" href="#">SC - Santa Catarina</a><a class="dropdown-item" role="presentation" href="#">SE - Sergipe</a>
+                        <a class="dropdown-item" role="presentation" href="#">SP - São Paulo</a><a class="dropdown-item" role="presentation" href="#">TO - Tocantins</a><a class="dropdown-item" role="presentation" href="#">EX - Exterior</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row" style="margin-top: 10px;">
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Cód. IBGE</strong><br></label></div>
+            <div class="clearfix"></div>
+            <div class="clearfix"></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><input class="form-control" type="text"></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;"><label class="col-form-label"><strong>Filial Responsavel</strong><br></label></div>
+            <div class="col-3 col-lg-6 flex-fill" style="font-size: 14px;">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle d-xl-flex justify-content-xl-center" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;height: 38px;"></button>
+                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-lg-2" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Redespacho</strong><br></label></div>
+            <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-1" style="margin-top: 10px;"><button class="btn btn-success" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 22px;"><i class="la la-download" style="color: #222222;"></i><br></button></div>
+            <div class="col-12 col-lg-8" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-lg-2" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Aeroporto Padrão</strong><br></label></div>
+            <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-1" style="margin-top: 10px;"><button class="btn btn-success" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 22px;"><i class="la la-download" style="color: #222222;"></i><br></button></div>
+            <div class="col-12 col-lg-7" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-12 col-lg-1" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-lg-2" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Cidade Retirada</strong><br></label></div>
+            <div class="col-11 col-lg-1 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-1" style="margin-top: 10px;"><button class="btn btn-success" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);padding: 0px;width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 22px;"><i class="la la-download" style="color: #222222;"></i><br></button></div>
+            <div class="col-12 col-lg-7" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-12 col-lg-1" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+        </div>
+        <div class="form-row" style="margin-bottom: 10px;">
+            <div class="col-12 col-lg-2" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Latitude</strong><br></label></div>
+            <div class="col-11 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-12 col-lg-2 d-xl-flex justify-content-xl-end" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Longitude</strong><br></label></div>
+            <div class="col-11 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-12 col-lg-2 d-xl-flex justify-content-xl-end" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Zoom</strong><br></label></div>
+            <div class="col-11 col-lg-2 d-flex d-xl-flex align-items-center align-items-xl-center" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+        </div>
+    </form>
+</div>
+<div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;margin-top: 15px;">
+    <h5 class="text-center">Dias Para Entrega</h5>
+    <hr style="margin-top: 5px;">
+    <form class="text-capitalize d-md-flex justify-content-xl-center align-items-xl-center">
+        <div class="form-check" style="margin-right: 20px;"><input class="form-check-input" type="checkbox" id="seg"><label class="form-check-label" for="seg"><strong>segunda</strong></label></div>
+        <div class="form-check" style="margin-right: 20px;"><input class="form-check-input" type="checkbox" id="ter"><label class="form-check-label" for="ter"><strong>Terça</strong></label></div>
+        <div class="form-check" style="margin-right: 20px;"><input class="form-check-input" type="checkbox" id="qua"><label class="form-check-label" for="qua"><strong>Quarta</strong></label></div>
+        <div class="form-check" style="margin-right: 20px;"><input class="form-check-input" type="checkbox" id="qui"><label class="form-check-label" for="qui"><strong>Quinta</strong></label></div>
+        <div class="form-check" style="margin-right: 20px;"><input class="form-check-input" type="checkbox" id="sex"><label class="form-check-label" for="sex"><strong>Sexta</strong></label></div>
+        <div class="form-check" style="margin-right: 20px;"><input class="form-check-input" type="checkbox" id="sab"><label class="form-check-label" for="sab"><strong>Sabado</strong></label></div>
+        <div class="form-check" style="margin-right: 20px;"><input class="form-check-input" type="checkbox" id="dom"><label class="form-check-label" for="dom"><strong>Domingo</strong></label></div>
+    </form>
+</div>
+<div class="container border rounded shadow-sm" style="margin-top: 15px;">
+    <div style="margin-top: 10px;">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-1">Parâmetros de Destino</a></li>
+            <li class="nav-item"><a class="nav-link disabled" role="tab" data-toggle="pill" href="#tab-2">Mapa</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" role="tabpanel" id="tab-1" style="padding-left: 0px;padding-bottom: 15px;">
+                <form class="justify-content-xl-center align-items-xl-center">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Cód. Destino</th>
+                                    <th>Nome Cidade</th>
+                                    <th>Distância (KM)</th>
+                                    <th>Rodoviário: Tempo(hrs)</th>
+                                    <th>Aéreo: Tempo(hrs)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell 1</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                    <td>Cell 4</td>
+                                    <td>Cell 4</td>
+                                    <td>Cell 4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p style="margin-bottom: 0px;margin-top: 5px;"><strong>Regiões Vinculadas</strong></p>
+                </form>
+                <form class="justify-content-xl-center align-items-xl-center">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Nome Da Região</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="tab-2"></div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center" style="margin-bottom: 15px; margin-top: 15px;">
+    <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-success d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/save.png')}}" style="width: 20%;">&nbsp; Gravar&nbsp;</button></div>
+    <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-success d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/save.png')}}" style="width: 20%;">&nbsp; Desfazer</button></div>
+</div>
+
+{% endblock %}
