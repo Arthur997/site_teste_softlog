@@ -23,3 +23,16 @@
   border: inset;
 }
 
+.navbar.navbar-dark.navbar-expand.border.rounded.shadow-sm.navigation-clean {
+  border-radius: 30px;
+  border: inset;
+}
+
+.table-sm td, .table-sm th {
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: rgb(52,73,94);
+}
+

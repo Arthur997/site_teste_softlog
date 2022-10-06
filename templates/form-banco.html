@@ -2,20 +2,22 @@
 {% block title %}Cadastro Banco{% endblock title %}
 {% block content %}
 
-    <div class="container border rounded shadow-sm" style="margin-top: 11px;margin-bottom: 10px;">
-        <h4 class="text-center" style="margin-top: 5px;margin-bottom: 0px;">Dados de Banco</h4>
-        <hr style="margin-top: 5px;">
-        <form>
-            <div class="form-row" style="margin-bottom: 10px;">
-                <div class="col-12 col-lg-2 text-center" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Número</strong><br></label></div>
-                <div class="col-12 col-lg-2" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
-                <div class="col-12 col-lg-2 col-xl-2 offset-xl-0 text-center" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Nome Banco</strong><br></label></div>
-                <div class="col-12 col-lg-6" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
-            </div>
-        </form>
-    </div>
-    <div class="row justify-content-center" style="margin-bottom: 20px;">
-        <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-center" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/save.png')}}" style="width: 20%;">&nbsp; Gravar&nbsp;</button></div>
-        <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-center" type="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/undo.png')}}" style="width: 20%;">&nbsp; Desfazer</button></div>
-    </div>
+<div class="container border rounded shadow-sm" style="margin-top: 11px;margin-bottom: 10px;">
+    <h4 class="text-center" style="margin-top: 5px;margin-bottom: 0px;">Dados de Banco</h4>
+    <hr style="margin-top: 5px;">
+    <form>
+        <div class="form-row" style="margin-bottom: 10px;">
+            <div class="col-12 col-lg-2 text-center" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Número</strong><br></label></div>
+            <div class="col-12 col-lg-2" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+            <div class="col-12 col-lg-2 col-xl-2 offset-xl-0 text-center" style="font-size: 14px;margin-top: 10px;"><label class="col-form-label"><strong>Nome Banco</strong><br></label></div>
+            <div class="col-12 col-lg-6" style="font-size: 14px;margin-top: 10px;"><input class="form-control" type="text"></div>
+        </div>
+    </form>
+</div>
+
+<div class="row justify-content-center" style="margin-bottom: 20px;">
+    <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-success d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/save.png')}}" style="width: 20%;">&nbsp; Gravar&nbsp;</button></div>
+    <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-success d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="background-color: rgb(255,255,255);color: rgb(0,0,0);"><img src="{{ url_for('static', filename='img/save.png')}}" style="width: 20%;">&nbsp; Desfazer</button></div>
+</div>
+
 {% endblock %}

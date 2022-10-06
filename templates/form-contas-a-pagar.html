@@ -1,0 +1,256 @@
+{% extends "index.html" %}
+{% block title %}Contas a {% endblock title %}
+{% block content %}
+<div class="container" style="padding: 0px;">
+<div class="row">
+    <div class="col-lg-9">
+        <div class="container border rounded shadow-sm" style="padding-bottom: 5px;padding-top: 5px;margin-top: 10px;">
+            <h4 class="text-center" style="margin-top: 10px;">Fornecedor</h4>
+            <hr style="margin-top: 0px;">
+            <form>
+                <div class="form-row" style="margin-bottom: 10px;margin-top: 10px;">
+                    <div class="col-12 col-lg-2 align-self-center" style="font-size: 14px;"><label class="col-form-label"><strong>Nome Fornecedor</strong><br></label></div>
+                    <div class="col-4 col-lg-1" style="font-size: 14px;"><input class="form-control" type="text" id="id_fornecedor-2"></div>
+                    <div class="clearfix"></div>
+                    <div class="col-1"><button class="btn btn-primary" style="background-color: rgb(255,255,255);color: rgb(0,0,0);width: 100%;background-position: center;background-size: contain;background-repeat: no-repeat;font-size: 25px;padding: 0px;height: 39px;"
+                            type="button">↓<br></button></div>
+                    <div class="col-7 col-lg-8" style="font-size: 14px;"><input class="form-control" type="text" id="nome_fornecedor-2"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="container border rounded shadow-sm" style="padding-bottom: 5px;padding-top: 5px;margin-top: 10px;">
+            <h4 class="text-center" style="margin-top: 10px;">Aguardando boleto</h4>
+            <hr style="margin-top: 0px;">
+            <form>
+                <div class="form-row" style="margin-bottom: 10px;margin-top: 10px;">
+                    <div class="col-7 col-lg-8" style="font-size: 14px;">
+                        <div class="form-check"><input class="form-check-input" type="radio" id="boleto_sim" name="radio_boleto"><label class="form-check-label" for="formCheck-1">SIM</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" id="boleto_nao" name="radio_boleto"><label class="form-check-label" for="formCheck-1">NÃO</label></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;margin-top: 15px;">
+<h4 class="text-center">Detalhes da Conta</h4>
+<form>
+    <div class="table-responsive" style="margin-top: 20px;">
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th>Empresa</th>
+                    <th>Filial</th>
+                    <th>Data Registro</th>
+                    <th>Emissão Docto</th>
+                    <th>Data Referência</th>
+                    <th>Vencimento</th>
+                    <th>Número Docto/NF</th>
+                    <th>Ordem Pagamento</th>
+                    <th>Compra</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_empresa-2"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_filial-2"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_data_registro-2"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_emissao_docto-2"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_data_referencia-2"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_vencimento-2"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_n_doctonf-2"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_ordem_pagamento-2"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_compra-2"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
+</div>
+<div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;margin-top: 15px;">
+<h4 class="text-center">Histórico de Contas</h4>
+<form>
+    <div class="form-row" style="margin-bottom: 10px;margin-top: 10px;">
+        <div class="col-12 col-lg-2 align-self-center" style="font-size: 14px;"><label class="col-form-label"><strong>Histórico</strong><br></label></div>
+        <div class="col-12 col-lg-10" style="font-size: 14px;"><input class="form-control" type="text" id="historico"></div>
+    </div>
+</form>
+</div>
+<div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;margin-top: 15px;">
+<h4 class="text-center">Detalhes do centro de Custos</h4>
+<form>
+    <div class="table-responsive" style="margin-top: 20px;">
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th>Cód. CC</th>
+                    <th>Nome do Centro de Custo</th>
+                    <th>Valor</th>
+                    <th>Placa Veículo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_cod_cc"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_nome_centro_custo"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_valor"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="det_placa_veiculo"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
+</div>
+<div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;margin-top: 15px;">
+<h4 class="text-center">Pagamento</h4>
+<form>
+    <div class="table-responsive" style="margin-top: 20px;">
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th>Data Pagto</th>
+                    <th>Mora/Dia</th>
+                    <th>Multa</th>
+                    <th>Atraso</th>
+                    <th>Desconto</th>
+                    <th>Valor Multa</th>
+                    <th>Valor Juros</th>
+                    <th>Protesto</th>
+                    <th>Valor Previsto</th>
+                    <th>Valor Pago</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_datapgto"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_mora_dia"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_multa"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_atraso"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_desconto"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_valor_multa"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_valor_juros"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_protesto"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_valor_previsto"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_valor_pago"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table-responsive" style="margin-top: 20px;">
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th>Conta Débito</th>
+                    <th>Conta Corrente</th>
+                    <th>Titular da conta</th>
+                    <th>Espécie Docto</th>
+                    <th>Docto/Cheque</th>
+                    <th>Emissão Cheque</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_conta_debito"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_conta_corrente"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_titular_conta"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_especie_docto"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_docto_cheque"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_emissao_cheque"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table-responsive" style="margin-top: 20px;">
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th>Favorecido</th>
+                    <th>Nosso Número Boleto</th>
+                    <th>Cód. Barras ou linha Digitável</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_favorecido"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_nosso_numero_boleto"></td>
+                    <td style="padding: 10px 5px;"><input class="form-control" type="text" id="pgto_cod_barras_linha_digitavel"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
+</div>
+<div class="container border rounded shadow-sm" style="padding-top: 10px;padding-bottom: 10px;margin-top: 15px;margin-bottom: 15px;">
+<form>
+    <div>
+        <ul class="nav nav-pills nav-justified" role="tablist">
+            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-1">Detalhes do Parcelamento</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-2">Ocorrencias</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-3">Observações da Conta</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link disabled" role="tab" data-toggle="pill" href="#tab-4">Negociações - Contas à Pagar<br></a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane" role="tabpanel" id="tab-1">
+                <div class="table-responsive" style="margin-top: 20px;">
+                    <table class="table">
+                        <thead>
+                            <tr class="text-center">
+                                <th>Nr. Ordem Pagamento</th>
+                                <th>Histórico da Conta</th>
+                                <th>Vencimento</th>
+                                <th>Pagamento</th>
+                                <th>Valor Previsto</th>
+                                <th>Valor Pago</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 10px 5px;"><input class="form-control" type="text" id="detparc_nr_ordem_pagamento"></td>
+                                <td style="padding: 10px 5px;"><input class="form-control" type="text" id="detparc_historico_conta"></td>
+                                <td style="padding: 10px 5px;"><input class="form-control" type="text" id="detparc_vencimento"></td>
+                                <td style="padding: 10px 5px;"><input class="form-control" type="text" id="detparc_pagamento"></td>
+                                <td style="padding: 10px 5px;"><input class="form-control" type="text" id="detparc_valor_previsto"></td>
+                                <td style="padding: 10px 5px;"><input class="form-control" type="text" id="detparc_valor_pago"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="tab-2">
+                <div class="table-responsive" style="margin-top: 15px;">
+                    <table class="table">
+                        <thead>
+                            <tr class="text-center">
+                                <th class="text-center">Data da Ocorrência</th>
+                                <th class="text-center justify-content-center">Usúario</th>
+                                <th class="text-center">Descrição da Ocorrência</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 10px 5px;"><input class="form-control" type="text" id="oco_data_ocorrencia"></td>
+                                <td style="padding: 10px 5px;"><input class="form-control" type="text" id="oco_usuario"></td>
+                                <td style="padding: 10px 5px;"><input class="form-control" type="text" id="oco_descricao_ocorrencia"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane active" role="tabpanel" id="tab-3"><textarea class="form-control" id="obs_conta" style="margin-top: 10px;"></textarea></div>
+            <div class="tab-pane" role="tabpanel" id="tab-4">
+                <p>Content for tab 3.</p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<div class="row justify-content-center" style="margin-bottom: 20px;margin-top: 20px;">
+    <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-center" style="background-color: rgb(255,255,255);color: rgb(0,0,0);" type="submit"><img style="width: 20%;" src="{{ url_for('static', filename='img/cheque.png')}}">&nbsp; Cheque</button></div>
+    <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-center" style="background-color: rgb(255,255,255);color: rgb(0,0,0);" type="submit"><img style="width: 20%;" src="{{ url_for('static', filename='img/save.png')}}">&nbsp; Gravar&nbsp;</button></div>
+    <div class="col-4 col-md-3 col-lg-2"><button class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-center" style="background-color: rgb(255,255,255);color: rgb(0,0,0);" type="submit"><img style="width: 20%;" src="{{ url_for('static', filename='img/undo.png')}}">&nbsp; Desfazer</button></div>
+</div>
+
+{% endblock %}
