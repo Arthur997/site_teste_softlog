@@ -62,10 +62,6 @@ def form_contas_a_pagar():
 def form_cidade():
     return render_template('form-cidade.html')
 
-@app.route("/form-contas-a-pagar")
-def form_contas_a_pagar():
-    return render_template('form-contas-a-pagar.html')
-
 if __name__ == "__main__":
     # app.run(port=3044, debug=True)
     app.run()
